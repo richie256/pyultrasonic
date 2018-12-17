@@ -1,4 +1,6 @@
-from pyultrasonic import UltrasonicSensor
+import argparse
+
+# from pyultrasonic import UltrasonicSensor
 from pyultrasonic.output import output_influx
 
 VERSION = "0.1"

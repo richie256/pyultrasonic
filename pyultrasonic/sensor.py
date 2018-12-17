@@ -2,7 +2,7 @@
 import RPi.GPIO as GPIO
 import time
 
-class UltrasonicSensor(object):
+class UltrasonicSensor():
 
     def __init__(self, gpio_trigger, gpio_echo, depth, compensation=0):
         """Initialize the sensor object."""
