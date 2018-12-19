@@ -6,12 +6,12 @@ from pyultrasonic.__main__ import VERSION
 if sys.version_info < (3,4):
     sys.exit('Sorry, Python < 3.4 is not supported')
 
-install_requires = list(val.strip() for val in open('requirements.txt'))
+#install_requires = list(val.strip() for val in open('requirements.txt'))
 tests_require = list(val.strip() for val in open('test_requirements.txt'))
 
 setup(name='pyultrasonic',
       version=VERSION,
-      description='RRetrieve distances using a Raspberry Pi with ultrasonic sensor HC-SR04',
+      description='Retrieve distances using a Raspberry Pi with ultrasonic sensor HC-SR04',
       author='Richard Dubois',
       author_email='dubois.richard@gmail.com',
       url='https://github.com/richie256/pyultrasonic',
@@ -24,7 +24,7 @@ setup(name='pyultrasonic',
           ]
       },
       license='Apache 2.0',
-      install_requires=install_requires,
+      install_requires=['RPi.GPIO'],
       tests_require=tests_require,
       classifiers=[
         'Programming Language :: Python :: 3.4',
