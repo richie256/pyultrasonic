@@ -1,2 +1,2 @@
 """PyUltrasonic Loader Module."""
-from pyultrasonic.sensor import UltrasonicSensor
+from pyultrasonic.sensor import UltrasonicSensorModule

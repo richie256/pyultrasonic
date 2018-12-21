@@ -3,7 +3,7 @@ import argparse
 # from pyultrasonic import UltrasonicSensor
 from pyultrasonic.output import output_influx
 
-VERSION = "0.1"
+VERSION = "0.1.2"
 
 def main():
     """Entrypoint function."""
@@ -33,7 +33,7 @@ def main():
               "-t/--trigger, -p/--echo, -d/--depth")
         return 3
 
-    sensor = UltrasonicSensor(args.trigger, args.echo, args.depth, args.compensation)
+    sensor = UltrasonicSensorModule(args.trigger, args.echo, args.depth, args.compensation)
     loop = asyncio.get_event_loop()
 
     sensor.retrieveDistance()
